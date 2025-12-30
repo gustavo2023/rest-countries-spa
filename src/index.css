@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@theme {
+  --font-nunito-sans: "Nunito Sans", sans-serif;
+
+  --color-grey-950: #111517;
+  --color-grey-400: #808080;
+  --color-grey-350: #979797;
+  --color-grey-300: #b2b2b2;
+  --color-grey-250: #c4c4c4;
+  --color-grey-50: #fcfcfc;
+  --color-blue-950: #202c36;
+  --color-blue-900: #2b3844;
+}
