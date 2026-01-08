@@ -20,4 +20,6 @@
   --color-grey-50: #fcfcfc;
   --color-blue-950: #202c36;
   --color-blue-900: #2b3844;
+
+  --shadow-header: 0 2px 4px 0 rgba(0, 0, 0, 0.06);
 }
