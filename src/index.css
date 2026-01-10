@@ -2,7 +2,8 @@
 
 @font-face {
   font-family: "Nunito Sans";
-  src: url("./fonts/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf") format("truetype");
+  src: url("./fonts/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf")
+    format("truetype");
   font-weight: 200 900;
   font-style: normal;
 }
@@ -22,4 +23,7 @@
   --color-blue-900: #2b3844;
 
   --shadow-header: 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+  --shadow-card: 0 0 7px 2px rgba(0, 0, 0, 0.1);
+
+  --rounded-card: 0.3125rem;
 }

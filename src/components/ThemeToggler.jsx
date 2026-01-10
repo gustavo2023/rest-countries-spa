@@ -18,12 +18,12 @@ function ThemeToggler() {
             fill="none"
           >
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M11.6782 11.2296C7.79357 11.2296 4.64429 8.34238 4.64429 4.78277C4.64429 3.43985 5.09179 2.19613 5.85643 1.16455C2.81536 2.1097 0.625 4.74577 0.625 7.85262C0.625 11.753 4.07429 14.9146 8.32857 14.9146C11.7179 14.9146 14.5946 12.9077 15.625 10.1191C14.5 10.8193 13.1411 11.2296 11.6782 11.2296Z"
               fill="white"
               stroke="#111517"
-              stroke-width="1.25"
+              strokeWidth="1.25"
             />
           </svg>
           <span>Dark Mode</span>
