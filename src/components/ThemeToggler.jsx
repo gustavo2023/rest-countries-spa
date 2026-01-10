@@ -6,7 +6,7 @@ function ThemeToggler() {
   return (
     <button
       onClick={toggleTheme}
-      className="flex items-center gap-2 text-grey-950 dark:text-white font-semibold"
+      className="flex items-center gap-2 text-grey-950 dark:text-white font-semibold cursor-pointer"
     >
       {theme === "light" ? (
         <>

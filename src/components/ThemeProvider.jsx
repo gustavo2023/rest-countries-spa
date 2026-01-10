@@ -1,6 +1,6 @@
 import { createContext, useContext, useState, useEffect } from "react";
 
-const ThemeContext = createContext();
+const ThemeContext = createContext("light");
 
 function ThemeProvider({ children }) {
   const [theme, setTheme] = useState(() => {
@@ -15,16 +15,11 @@ function ThemeProvider({ children }) {
 
   useEffect(() => {
     const html = document.documentElement;
-
     html.classList.toggle("dark", theme === "dark");
     localStorage.setItem("theme", theme);
   }, [theme]);
 
-  return (
-    <ThemeContext.Provider value={{ theme, toggleTheme }}>
-      {children}
-    </ThemeContext.Provider>
-  );
+  return <ThemeContext value={{ theme, toggleTheme }}>{children}</ThemeContext>;
 }
 
 function useTheme() {
