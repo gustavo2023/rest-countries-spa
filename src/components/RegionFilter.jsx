@@ -12,7 +12,7 @@ function RegionFilter({ regions, selectedRegion, onSelectRegion }) {
     <div className="relative w-52">
       <div
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center justify-between px-6 py-5 bg-white dark:bg-blue-900 rounded-md shadow-input cursor-pointer text-black dark:text-white"
+        className="flex items-center justify-between px-6 py-5 bg-white dark:bg-blue-900 rounded-(--rounded-card) shadow-input cursor-pointer text-black dark:text-white"
       >
         <span className="text-sm font-semibold">
           {selectedRegion || "Filter by Region"}

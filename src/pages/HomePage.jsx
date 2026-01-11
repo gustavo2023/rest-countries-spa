@@ -26,7 +26,7 @@ function HomePage() {
 
   return (
     <div className="p-10">
-      <div className="mb-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+      <div className="mb-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-10 md:gap-6">
         <SearchBar searchCountry={searchCountry} onSearch={setSearchCountry} />
         <RegionFilter
           regions={regions}
@@ -35,9 +35,13 @@ function HomePage() {
         />
       </div>
 
-      {loading && <p className="text-center text-2xl mt-8">Loading...</p>}
+      {loading && (
+        <p className="text-center text-black dark:text-white text-4xl mt-8">
+          Loading...
+        </p>
+      )}
       {error && (
-        <p className="text-center text-2xl mt-8 text-red-500">{error}</p>
+        <p className="text-center text-4xl mt-8 text-red-500">{error}</p>
       )}
 
       {!loading && !error && countries && (

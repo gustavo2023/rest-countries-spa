@@ -1,6 +1,6 @@
 function SearchBar({ searchCountry, onSearch }) {
   return (
-    <div className="flex items-center justify-start gap-6 px-8 py-5 bg-white dark:bg-blue-900 rounded-(--rounded-card) shadow-input">
+    <div className="w-full lg:max-w-md flex items-center justify-start gap-6 px-8 py-5 bg-white dark:bg-blue-900 rounded-(--rounded-card) shadow-input">
       <div>
         <svg
           xmlns="http://www.w3.org/2000/svg"
