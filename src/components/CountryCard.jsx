@@ -6,8 +6,9 @@ function CountryCard({ country }) {
       <article className="bg-white dark:bg-blue-900 flex flex-col h-full shadow-card rounded-(--rounded-card) overflow-hidden cursor-pointer hover:scale-105 transition-transform duration-300">
         <div className="h-40">
           <img
+            loading="lazy"
             src={country.flags.png}
-            alt={country.flags.alt}
+            alt={country.flags.alt || `Flag of ${country.name.common}`}
             className="object-cover w-full h-full"
           />
         </div>

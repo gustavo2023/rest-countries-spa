@@ -47,7 +47,7 @@ function HomePage() {
       {!loading && !error && countries && (
         <ul className="p-4 md:px-0 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 md:gap-14">
           {filteredCountries.map((country) => (
-            <li key={country.name.common}>
+            <li key={country.cca3}>
               <CountryCard country={country} />
             </li>
           ))}
