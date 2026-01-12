@@ -13,7 +13,7 @@ function HomePage() {
     loading,
     error,
   } = useFetch(
-    "https://restcountries.com/v3.1/all?fields=flags,name,population,region,capital"
+    "https://restcountries.com/v3.1/all?fields=flags,name,population,region,capital,cca3"
   );
 
   const regions = ["Africa", "Americas", "Asia", "Europe", "Oceania"];
